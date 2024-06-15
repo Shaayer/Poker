@@ -9,6 +9,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if(Global.gameStarting==true):
+		print("running")
 		#Round
 		var round=$Round
 		round.text="Round "+str(Global.rounds)

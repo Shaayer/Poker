@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccf6g8x3upknd"]
+
+[ext_resource type="Script" path="res://win_button.gd" id="1_ekqr6"]
+
+[node name="WinButton" type="Button"]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "asdf"
+script = ExtResource("1_ekqr6")
+
+[connection signal="button_up" from="." to="." method="_on_button_up"]

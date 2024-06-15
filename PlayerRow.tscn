@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjplc3g7dluha"]
+
+[ext_resource type="Script" path="res://PlayerRow.gd" id="1_g47oy"]
+
+[node name="PlayerRow1" type="HBoxContainer"]
+size_flags_vertical = 3
+script = ExtResource("1_g47oy")
+
+[node name="Money" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "A - $300"
+
+[node name="Role" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Dealer"

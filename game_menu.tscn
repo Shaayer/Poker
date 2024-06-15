@@ -1,0 +1,189 @@
+[gd_scene load_steps=8 format=3 uid="uid://bg5ad7e3nrgff"]
+
+[ext_resource type="FontFile" uid="uid://dfwmisxih76sv" path="res://ProtestStrike-Regular.ttf" id="1_mjrhr"]
+[ext_resource type="Script" path="res://game_menu.gd" id="2_xercg"]
+[ext_resource type="Theme" uid="uid://jmka8iuq7wxi" path="res://new_theme.tres" id="3_k8qsu"]
+[ext_resource type="Script" path="res://1st_2nd_Rows.gd" id="3_t366q"]
+[ext_resource type="Script" path="res://3rd_Column_VBox.gd" id="4_enaqw"]
+[ext_resource type="Script" path="res://Winning Buttons.gd" id="5_g1mi8"]
+
+[sub_resource type="Theme" id="Theme_8bn82"]
+default_font = ExtResource("1_mjrhr")
+default_font_size = 42
+
+[node name="Game Menu" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_8bn82")
+script = ExtResource("2_xercg")
+
+[node name="Who won?" type="Label" parent="."]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Who won?"
+
+[node name="Top_Half" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Column_Titles" type="HBoxContainer" parent="Top_Half"]
+layout_mode = 2
+theme = ExtResource("3_k8qsu")
+
+[node name="Money_Label" type="Label" parent="Top_Half/Column_Titles"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.603922, 0.568627, 0.145098, 1)
+text = "Money"
+
+[node name="Role_Label" type="Label" parent="Top_Half/Column_Titles"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.603922, 0.568627, 0.145098, 1)
+text = "Role"
+
+[node name="Other_Data_Label" type="Label" parent="Top_Half/Column_Titles"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.603922, 0.568627, 0.145098, 1)
+text = "Other Data"
+
+[node name="Data" type="HBoxContainer" parent="Top_Half"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Top_Half/Data"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="1st_2nd_Rows" type="VBoxContainer" parent="Top_Half/Data/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("3_t366q")
+
+[node name="3rd_Column" type="MarginContainer" parent="Top_Half/Data"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="3rd_Column_VBox" type="VBoxContainer" parent="Top_Half/Data/3rd_Column"]
+layout_mode = 2
+script = ExtResource("4_enaqw")
+
+[node name="Round" type="Label" parent="Top_Half/Data/3rd_Column/3rd_Column_VBox"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Round 6"
+autowrap_mode = 3
+
+[node name="Turn" type="Label" parent="Top_Half/Data/3rd_Column/3rd_Column_VBox"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.364706, 0.560784, 1, 1)
+text = "A's Turn"
+autowrap_mode = 3
+
+[node name="Minimum Bet" type="Label" parent="Top_Half/Data/3rd_Column/3rd_Column_VBox"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.364706, 0.560784, 1, 1)
+text = "Minimum Bet: $50"
+autowrap_mode = 3
+
+[node name="Minimum Bet Reach" type="Label" parent="Top_Half/Data/3rd_Column/3rd_Column_VBox"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.364706, 0.560784, 1, 1)
+text = "A has not bet the minimum."
+autowrap_mode = 3
+
+[node name="Pot" type="Label" parent="Top_Half/Data/3rd_Column/3rd_Column_VBox"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0.537255, 0, 1)
+text = "Pot: $200"
+autowrap_mode = 3
+
+[node name="Kick" type="Label" parent="Top_Half/Data/3rd_Column/3rd_Column_VBox"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "No one has been kicked."
+autowrap_mode = 3
+
+[node name="Cards" type="Label" parent="Top_Half/Data/3rd_Column/3rd_Column_VBox"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "adsfjdsafads"
+autowrap_mode = 3
+
+[node name="Buttons" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Fold" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Fold"
+
+[node name="Raise" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Raise"
+
+[node name="Check_Call" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Check/Call"
+
+[node name="Raise Buttons" type="HBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="+5" type="Button" parent="Raise Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+5"
+
+[node name="+10" type="Button" parent="Raise Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+10"
+
+[node name="+20" type="Button" parent="Raise Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+20"
+
+[node name="+50" type="Button" parent="Raise Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+50"
+
+[node name="+75" type="Button" parent="Raise Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+75"
+
+[node name="+100" type="Button" parent="Raise Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+100"
+
+[node name="Winning Buttons" type="GridContainer" parent="."]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+columns = 2
+script = ExtResource("5_g1mi8")
+
+[connection signal="button_up" from="Buttons/Fold" to="." method="handleAction" binds= ["Fold"]]
+[connection signal="button_up" from="Buttons/Raise" to="." method="handleAction" binds= ["Raise"]]
+[connection signal="button_up" from="Buttons/Check_Call" to="." method="handleAction" binds= ["Check_Call"]]

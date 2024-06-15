@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqnprt045lfm2"]
+
+[ext_resource type="Theme" uid="uid://jmka8iuq7wxi" path="res://new_theme.tres" id="1_yh3e4"]
+[ext_resource type="Script" path="res://label.gd" id="2_i4gdo"]
+[ext_resource type="Script" path="res://Player Set.gd" id="3_avdj8"]
+[ext_resource type="PackedScene" uid="uid://bg5ad7e3nrgff" path="res://game_menu.tscn" id="4_67akm"]
+
+[node name="gui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_yh3e4")
+script = ExtResource("2_i4gdo")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.9
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Game Set" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.9
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 24
+text = "abcdefghjiklmnop
+adlkjf
+
+adjflajdl;f
+kldsafj;ldaj
+;lkasjfdlj
+a;jda
+kl;;kdjaf
+kl;as;ljd;lkfa;dlsk
+lkasjd;flj;daklsf
+ds;fjdkl;asjf
+a;dfsj;l
+asdljdfjds
+fjdsjfsd
+kfkfds
+fasdfkds
+fjds
+kfjdsk
+jfk
+dsfkdskf
+dsafjdsf
+dsfdk
+d
+f
+ds
+kfdsjk
+f"
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Player Set" type="Node" parent="."]
+script = ExtResource("3_avdj8")
+
+[node name="Game Menu" parent="." instance=ExtResource("4_67akm")]
+layout_mode = 1

@@ -1,0 +1,22 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1717475111
+1st_2nd_Rows.gd::GDScript::-1::1717475060::0::1::::<>VBoxContainer<>::
+3rd_Column_VBox.gd::GDScript::-1::1717475060::0::1::::<>VBoxContainer<>::
+game_menu.gd::GDScript::-1::1717475060::0::1::::<>VBoxContainer<>::
+game_menu.tscn::PackedScene::2869492123741465119::1717475060::0::1::::<><>::uid://dfwmisxih76sv::::res://ProtestStrike-Regular.ttf<>res://game_menu.gd<>uid://jmka8iuq7wxi::::res://new_theme.tres<>res://1st_2nd_Rows.gd<>res://3rd_Column_VBox.gd<>res://Winning Buttons.gd
+Global.gd::GDScript::-1::1717475060::0::1::::<>Node2D<>::
+global.tscn::PackedScene::4641580116279279834::1717475060::0::1::::<><>::res://Global.gd
+icon.svg::CompressedTexture2D::6071169907917268218::1717475060::1717475060::1::::<><>::
+label.gd::GDScript::-1::1717475060::0::1::::<>Control<>::
+label.tscn::PackedScene::8310062611400397663::1717475060::0::1::::<><>::uid://dtngwyy6ppeou::::res://new_theme.tres<>res://label.gd<>res://Player Set.gd<>uid://h3g580j52fbd::::res://game_menu.tscn
+main.tscn::PackedScene::3198573662915084605::1717475060::0::1::::<><>::
+new_theme.tres::Theme::657081042279037294::1717475060::0::1::::<><>::
+Player Set.gd::GDScript::-1::1717475060::0::1::::<>Node<>::
+player.gd::GDScript::-1::1717475060::0::1::::Player<>Node<>::
+player.tscn::PackedScene::1186562163766538491::1717475060::0::1::::<><>::res://player.gd
+PlayerRow.gd::GDScript::-1::1717475060::0::1::::<>HBoxContainer<>::
+PlayerRow.tscn::PackedScene::3049758882635558854::1717475060::0::1::::<><>::res://PlayerRow.gd
+ProtestStrike-Regular.ttf::FontFile::7556366451448152997::1717475061::1717475061::1::::<><>::
+Winning Buttons.gd::GDScript::-1::1717475061::0::1::::<>GridContainer<>::
+win_button.gd::GDScript::-1::1717475061::0::1::::<>Button<>::
+win_button.tscn::PackedScene::4925435655072331997::1717475061::0::1::::<><>::res://win_button.gd

@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://jmka8iuq7wxi"]
+
+[ext_resource type="FontFile" uid="uid://dfwmisxih76sv" path="res://ProtestStrike-Regular.ttf" id="1_vl1ab"]
+
+[resource]
+default_font = ExtResource("1_vl1ab")
